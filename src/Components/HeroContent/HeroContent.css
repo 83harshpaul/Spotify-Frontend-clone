@@ -1,0 +1,45 @@
+.herocontent{
+  /* position: relative; */
+    background-color: #222121;
+    /* background: linear-gradient(to top, #131313 40%, #222121 70%); */
+    border-radius: 10px;
+    background-color: #131313;
+    height:755px;
+    overflow-y: scroll;
+    /* padding: 15px; */
+    /* width: 72%; */
+    left: 100px;
+}
+
+.herorouters{
+  flex: 1; /* Dynamic content fills the rest of the space */
+  overflow-y: auto; /* Enable scrolling if needed */
+  padding: 20px;
+  background-color: #121212; 
+  /* background-color: #a43c3c; Match the overall theme */
+  color: #fff; /* Adjust for readability */
+  /* width: 900px; */
+}
+
+.herocontent::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+    
+  }
+  
+  .herocontent::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 0 10px 10px 0; /* Rounded scrollbar handle */
+    
+  }
+  
+  .herocontent::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+   
+  }
+  
+  .herocontent::-webkit-scrollbar-track {
+    /* background: linear-gradient(to top, #131313 40%, #222121 70%); Background of the scrollbar track */
+    background-color: #131313;
+    border-radius: 0 10px 10px 0;/* Rounded scrollbar track */
+   
+  }

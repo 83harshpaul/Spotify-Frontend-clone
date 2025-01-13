@@ -1,0 +1,15 @@
+.browse-all{
+    padding-left: 20px;
+}
+.browse-all-heading{
+    color: #fff;
+    font-size:35px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+}
+.browse-all-content{
+    display: flex;
+    gap:27px;
+    flex-wrap: wrap;
+}

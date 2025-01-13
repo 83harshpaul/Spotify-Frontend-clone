@@ -1,0 +1,100 @@
+.signupOrLoginFirst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding:190px 0;
+    background:transparent;
+    z-index: 20;
+   
+}
+.signupOrLoginFirst-container{
+    display: flex;
+    align-items: center;
+    background:linear-gradient(to bottom, #442525 70%, rgb(36, 47, 56) 55%);
+    background: linear-gradient(to bottom,
+    #442525 40%, rgb(36, 47, 56) 100%);
+    padding: 80px;
+    gap: 80px;
+    border-radius:15px;
+}
+.signupOrLoginFirst-container img{
+    width: 380px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px rgb(106, 105, 105);
+}
+.signupOrLoginFirst-container-options{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+}
+.signupOrLoginFirst-container-line1{
+    color: #fff;
+    font-size: 41px;
+    font-weight: bold;
+    word-spacing: -5px;
+    text-align: center;
+}
+.signupOrLoginFirst-container-button1{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 17px 37px;
+    border-radius:30px;
+    background-color: #1cdc64;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.signupOrLoginFirst-container-button1:hover{
+    scale: 1.04;
+}
+.signupOrLoginFirst-container-button2{
+    border: 1px solid grey;
+    outline: none;
+    font-size: 20px;
+    padding: 17px 37px;
+    border-radius:30px;
+    /* background-color: #1cdc64; */
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.signupOrLoginFirst-container-button2:hover{
+    border:1px solid #fff;
+    scale:1.04 ;
+}
+.signupOrLoginFirst-container-line2{
+    color: rgb(181, 177, 177);
+    font-size: 18px;
+    font-weight: 500;
+}
+.signupOrLoginFirst-container-line2 span{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.signupOrLoginFirst-container-line2 span:hover{
+    color: #1cdc64;
+}
+.signupOrLoginFirst-close{
+    color: #938c8c;
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 35px;
+}
+.signupOrLoginFirst-close:hover{
+    scale: 1.06;
+    cursor: pointer;
+    color: #fff;
+}
+.signupOrLoginFirst-closinglink{
+    text-decoration:none;
+    margin-top:35px;
+}

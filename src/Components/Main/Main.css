@@ -1,0 +1,7 @@
+.main{
+    display: grid;
+    grid-template-columns: 28% 72%;
+    height:755px;
+    background-color: #000000;
+    padding: 0 10px 10px 10px;
+}

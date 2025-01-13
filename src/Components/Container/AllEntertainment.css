@@ -1,0 +1,7 @@
+.allEntertainment{
+    border-radius: 10px;
+}
+.allEntertainment img{
+    border-radius: 10px;
+    cursor: pointer;
+}

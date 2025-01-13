@@ -1,0 +1,25 @@
+.artistpage{
+    padding-left: 20px;
+}
+
+.artistpage-populartist{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+.artistpage-populartist-heading{
+    color: #fff;
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom:40px;
+    margin-top: 60px;
+}
+.artistpage-showall{
+    color: #fff;
+    font-size:23px;
+}
+.artistpage-artists{
+    display:flex;
+    flex-wrap: wrap;
+}

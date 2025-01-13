@@ -1,0 +1,67 @@
+import pod1 from '../Assests/pod1.png' 
+import pod2 from '../Assests/pod2.png' 
+import pod3 from '../Assests/pod3.png' 
+import pod4 from '../Assests/pod4.png' 
+import pod5 from '../Assests/pod5.png' 
+import pod6 from '../Assests/pod6.png' 
+import pod7 from '../Assests/pod7.png' 
+import pod8 from '../Assests/pod8.png' 
+import pod9 from '../Assests/pod9.png' 
+import pod10 from '../Assests/pod10.png' 
+import pod11 from '../Assests/pod11.png' 
+import pod12 from '../Assests/pod12.png' 
+import pod13 from '../Assests/pod13.png' 
+import pod14 from '../Assests/pod14.png' 
+import pod15 from '../Assests/pod15.png' 
+import pod16 from '../Assests/pod16.png' 
+import pod17 from '../Assests/pod17.png' 
+import pod18 from '../Assests/pod18.png' 
+import pod19 from '../Assests/pod19.png' 
+import pod20 from '../Assests/pod20.png' 
+import pod21 from '../Assests/pod21.png' 
+import pod22 from '../Assests/pod22.png' 
+import pod23 from '../Assests/pod23.png' 
+import pod24 from '../Assests/pod24.png' 
+import pod25 from '../Assests/pod25.png' 
+import pod26 from '../Assests/pod26.png' 
+import pod27 from '../Assests/pod27.png' 
+import pod28 from '../Assests/pod28.png' 
+import pod29 from '../Assests/pod29.png' 
+import pod30 from '../Assests/pod31.png' 
+import pod31 from '../Assests/pod31.png' 
+
+const data =[
+    { picture: pod1 },
+    { picture: pod2 },
+    { picture: pod3 },
+    { picture: pod4 },
+    { picture: pod5 },
+    { picture: pod6 },
+    { picture: pod7 },
+    { picture: pod8 },
+    { picture: pod9 },
+    { picture: pod10 },
+    { picture: pod11 },
+    { picture: pod12 },
+    { picture: pod13 },
+    { picture: pod14 },
+    { picture: pod15 },
+    { picture: pod16 },
+    { picture: pod17 },
+    { picture: pod18 },
+    { picture: pod19 },
+    { picture: pod20 },
+    { picture: pod21 },
+    { picture: pod22 },
+    { picture: pod23 },
+    { picture: pod24 },
+    { picture: pod25 },
+    { picture: pod26 },
+    { picture: pod27 },
+    { picture: pod28 },
+    { picture: pod29 },
+    { picture: pod30 },
+    { picture: pod31 }
+]
+
+export default data

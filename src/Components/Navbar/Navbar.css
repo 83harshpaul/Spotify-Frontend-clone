@@ -1,0 +1,140 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 5px 30px;
+    background-color: #000000;
+    
+}
+
+.navbar-spotifylogo{
+    width: 63px;
+    cursor: pointer;
+}
+.navbar-homeicon,.navbar-search-icon,.navbar-case{
+    color: #fff;
+}
+.navbar-searchbar{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    /* padding: 20px; */
+    margin-left: 220px;
+}
+.navbar-homeicon{
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #222121;
+    padding: 13px;
+    padding-bottom: 13px;
+    cursor: pointer;
+    margin-right: 15px;
+    color: #bbb2b2;
+}
+.navbar-input{
+    display: flex;
+    align-items: center;
+    padding:14px;
+    background-color:#222121 ;
+    border-radius: 50px;
+    width: 80%;
+    transition: 0.1s;
+}
+.navbar-search-icon{
+    font-size: 30px;
+    border-radius: 50% 0px 0px 50%;
+    background-color: #222121;
+    /* padding: 13px; */
+    /* padding-bottom: 13px; */
+    cursor: pointer; 
+    color: #bbb2b2;
+}
+.navbar-search{
+    background-color: #222121;
+    /* background-color: #db1616; */
+    
+    font-size: 21px;
+    outline: none;
+    border: none;
+    color: #bbb2b2;
+    /* padding: 16px 0px; */
+    width: 100%;
+    text-indent: 10px;
+    transition: 0.1s;
+}
+.navbar-search-link{
+   width: 85%;
+   min-width: 70%;
+}
+.navbar-case{
+    font-size: 30px;
+    border-radius: 0px 50% 50% 0px;
+    background-color: #222121;
+    padding-left: 13px;
+    /* padding-bottom: 13px; */
+    cursor: pointer; 
+    color: #bbb2b2;
+    border-left:1px solid #bbb2b2 ;
+    margin-left: auto;
+    
+}
+.navbar-browse{
+    margin-left:auto;
+}
+.navbar-case:hover{
+    color: #fff;
+    scale: 1.03;
+    background-color: #323131;
+}
+.navbar-account{
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.navbar-signup{
+    font-size:20px;
+    font-weight: bold;
+    color: #bbb2b2;
+    text-decoration: none;
+}
+.navbar-login{
+    background-color: #fff;
+    color: #000000;
+    font-size:20px;
+    font-weight: bold;
+    padding:15px 40px;
+    border-radius: 30px;
+    margin-left: 30px;
+    /* transition: 0.8s all; */
+  
+}
+.navbar-login-button{
+    text-decoration: none;
+}
+.navbar-login:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+.navbar-signup:hover{
+    cursor: pointer;
+    scale: 1.05;
+    color: #fff;
+}
+.navbar-input:hover{
+    background-color: #323131;
+    cursor: pointer;
+}
+.navbar-input:hover .navbar-search{
+    background-color: #323131;
+    cursor: pointer;
+}
+.navbar-input:hover .navbar-search-icon{
+    color: #fff;
+    background-color: #323131;
+}
+.navbar-input:hover .navbar-case{
+    background-color: #323131;
+}
+.navbar-input:clicked{
+    border: 2px solid #fff;
+}

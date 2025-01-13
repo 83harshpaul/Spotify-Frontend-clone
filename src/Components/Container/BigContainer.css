@@ -1,0 +1,60 @@
+.bigcontainer{
+    position: relative;
+    text-align: left;
+    color: #fff;
+    padding: 15px 0px 15px 14px;
+    border-radius: 10px;
+    width: 248px;
+    background: transparent;
+    cursor: pointer;
+    
+}
+/* .container-artist-image{
+    background: transparent;
+    
+} */
+.bigcontainer img{
+    width: 238px;
+    border-radius:100%;
+    background-color: transparent;
+}
+.bigcontainer-artist-name{
+    
+    margin: 0;
+    font-size:20px;
+}
+.bigcontainer-artist-name:hover{
+    text-decoration: underline;
+}
+.bigcontainer-artist-prof{
+  
+    margin-top:8px;
+    margin-bottom: 0;
+    font-size:17px;
+    color: #bbb2b2;
+}
+.bigcontainer:hover{
+    background-color: #2f2e2e63;
+}
+.bigcontainer-play{
+    position: absolute;
+    top: 185px;
+    right: 30px;
+    opacity: 0;
+    transition: 0.2s;
+    padding-top: 8% ;
+}
+.bigcontainer-playButton{
+    padding:15px 18px;
+    border-radius: 100px;
+    background-color: #1cdc64;
+    color: black;
+    font-size:25px;
+}
+.bigcontainer:hover .bigcontainer-play{
+    padding-top: 0%;
+    opacity: 1;
+}
+.bigcontainer-play:hover{
+    scale: 1.05;
+}

@@ -1,0 +1,67 @@
+.hero{
+    /* background-color: #222121; */
+    /* background: linear-gradient(to top, #131313 40%, #222121 70%); */
+    border-radius: 10px;
+    /* height:725px;
+    overflow-y: scroll; */
+    padding: 15px;
+    background-color: #131313;
+}
+.hero-content{
+    margin-bottom:50px;
+}
+.hero-popularartists-heading{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0px 20px;
+}
+.hero-artists{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-populartists{
+    color: #fff;
+    font-size:30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hero-showall{
+    color: #fff;
+    font-size:17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hero-populartists:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.hero-showall:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* .hero::-webkit-scrollbar {
+    width: 15px; 
+    
+  }
+  
+  .hero::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 0 10px 10px 0; 
+    
+  }
+  
+  .hero::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+   
+  }
+  
+  .hero::-webkit-scrollbar-track {
+    background: linear-gradient(to top, #131313 40%, #222121 70%); 
+    border-radius: 0 10px 10px 0;
+   
+  } */
+
+
+  

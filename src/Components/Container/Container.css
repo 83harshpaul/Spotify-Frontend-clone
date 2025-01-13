@@ -1,0 +1,71 @@
+.container{
+    position: relative;
+    text-align: left;
+    color: #fff;
+    padding: 15px 5px 15px 14px;
+    border-radius: 10px;
+    width: 200px;
+    background: transparent;
+    cursor: pointer;
+    
+}
+/* .container-artist-image{
+    background: transparent;
+    
+} */
+.container img{
+    width: 195px;
+    border-radius:100%;
+    background-color: transparent;
+}
+.container-artist-name{
+    
+    margin: 0;
+    font-size:20px;
+}
+.container-artist-name:hover{
+    text-decoration: underline;
+}
+.container-artist-prof{
+  
+    margin-top:8px;
+    margin-bottom: 0;
+    font-size:17px;
+    color: #bbb2b2;
+}
+.container:hover{
+    background-color: #2f2e2e63;
+}
+.container-play{
+    position: absolute;
+    top: 140px;
+    right: 20px;
+    opacity: 0;
+    transition: 0.2s;
+    padding-top: 8% ;
+}
+/* .container-playButton{
+    padding:15px 18px;
+    border-radius: 100px;
+    background-color: #1cdc64;
+    color: black;
+    font-size:25px;
+} */
+.container-play img{
+    /* padding:15px 18px; */
+    border-radius: 100px;
+    background-color: #1cdc64;
+    /* color: black; */
+    /* font-size:25px; */
+    width: 60px;
+}
+.container:hover .container-play{
+    padding-top: 0%;
+    opacity: 1;
+}
+.container-play:hover{
+    scale: 1.05;
+}
+.container-link{
+    text-decoration: none;  
+}

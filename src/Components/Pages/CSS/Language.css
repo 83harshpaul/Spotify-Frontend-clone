@@ -1,0 +1,94 @@
+
+.language{
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: center;
+    background: rgb(0,0,0,0.7  );
+    padding-top: 80px;
+    padding-bottom:10px;
+}
+.language-chooselanguage{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    background-color: rgb(41, 39, 39);
+    border-radius: 10px;
+    height: 750px;
+    
+}
+.language-chooselanguage-header{
+    display: flex;
+    padding:25px 30px 20px 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(69, 66, 66);
+}
+.language-choose{
+    display: flex;
+    flex-direction: column;
+}
+.language-choose-line1{
+    font-size:32px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.language-choose-line2{
+    font-size: 20px;
+    color: #fff;
+}
+.language-cross-icon{
+    font-size: 23px;
+    color: #999595;
+    background-color: black;
+    padding: 9px 12px;
+    border-radius:100px;
+    
+}
+.language-box{
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    overflow-y: scroll;
+    padding: 20px 40px;
+    /* gap: 40px; */
+}
+.language-boxes{
+   
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    /* gap: 10px; */
+    font-size:21px;
+    /* font-weight: bold; */
+    padding: 23px 20px;
+}
+.language-boxes:hover{
+    background-color: rgb(51, 48, 48)
+}
+.language-lang2{
+    color: rgb(150, 146, 146);
+}
+.language-box::-webkit-scrollbar {
+    width: 11px; /* Width of the scrollbar */
+    
+  }
+  
+  .language-box::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded scrollbar handle */
+   
+  }
+  
+  .language-box::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+   
+  }
+  
+  .language-box::-webkit-scrollbar-track {
+    /* background: linear-gradient(to top, #131313 40%, #222121 70%); Background of the scrollbar track */
+    background-color: rgb(41, 39, 39);
+    border-radius: 0 10px 10px 0;
+    
+   
+  }
