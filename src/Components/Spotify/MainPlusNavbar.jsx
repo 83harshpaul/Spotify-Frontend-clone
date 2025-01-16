@@ -10,7 +10,8 @@ const MainPlusNavbar = ({setLanguageOptions,showCreatePlaylist,setShowCreatePlay
       <Main setLanguageOptions={setLanguageOptions}
             showCreatePlaylist={showCreatePlaylist}
             setShowCreatePlaylist={setShowCreatePlaylist}
-            setScrollPixels={setScrollPixels}/>
+            setScrollPixels={setScrollPixels}
+            />
     </div>
   )
 }

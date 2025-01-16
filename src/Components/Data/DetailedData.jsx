@@ -54,18 +54,6 @@ const data =[
             { songName: "Janam Janam", timesListened: "385,174,768", songLength: "4:40", picture: pic9 ,SNo:9 ,song:song9},
             { songName: "Tera Hone Laga Hoon", timesListened: "493,285,983", songLength: "4:14", picture: pic10 ,SNo:10 ,song:song10}
           ],
-          songsAudios:[
-               {song:song1},
-               {song:song2},
-               {song:song3},
-               {song:song4},
-               {song:song5},
-               {song:song6},
-               {song:song7},
-               {song:song8},
-               {song:song9},
-               {song:song10}
-          ],
           photo2:art1    
     },
     {

@@ -18,6 +18,8 @@ function App() {
   const [navbarInputBorder,setNavbarInputBorder] = React.useState("none")
   const [passingImage,setPassingImage] = React.useState("1")
   const [scrolledPixels,setScrollPixels] = React.useState("")
+  const [playerData, setPlayerData] = React.useState({})
+  // console.log(playerData)
   const createplaylistClasses = [ "createplaylist","createplaylist-heading","createplaylist-sub","createplaylist-button"]  
   const navbarInputClasses = ["navbar-search-icon","navbar-search","navbar-input"]
   const inputNavbarStyles = {
@@ -69,14 +71,17 @@ function App() {
                                             setShowCreatePlaylist={setShowCreatePlaylist}
                                             navbarInputBorder={navbarInputBorder}
                                             setNavbarInputBorder={setNavbarInputBorder}
-                                            setScrollPixels={setScrollPixels} />}>
+                                            setScrollPixels={setScrollPixels}
+                                            playerData={playerData} 
+                                            />}>
               <Route index element={<Hero setPassingImage={setPassingImage}/>} />
               <Route path="allArtists" element={<ShowAllCategory category="artist" />} />
               <Route path="allAlbums" element={<ShowAllCategory category="album"/>} />
               <Route path="allRadios" element={<ShowAllCategory category="radio"/>} />
               <Route path="browseall" element={<BrowseAll />}/>
               <Route path="podcast" element={<Podcast />}/> 
-              <Route path="moreDetails" element ={<MoreDetailedData scrolledPixels={scrolledPixels} passingImage={passingImage}/>}/>       
+              <Route path="moreDetails" element ={<MoreDetailedData scrolledPixels={scrolledPixels} passingImage={passingImage} 
+                                                                    setPlayerData={setPlayerData}/>}/>       
           </Route>
           
           <Route path="/signup" element={<SignUp/>}/>

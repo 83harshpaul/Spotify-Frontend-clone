@@ -12,13 +12,15 @@ import artistData from '../Data/ArtistData'
 import Container from '../Container/Container'
 import allContent from "../Data/AllContent"
 
-const MoreDetailedData = ({scrolledPixels,passingImage}) => {
+const MoreDetailedData = ({scrolledPixels,passingImage,setPlayerData}) => {
     const [showMoreSongs, setShowMoreSongs] = React.useState(false)
+    
     
     const firstElement = moreDetailed[passingImage-1];
     
     const songlist = firstElement.popularSongs;
     const playCurrentSong = useRef(null)
+    const getSongName = useRef(null)
     const [playThisSong,setPlayThisSong] = React.useState("1")
 
     // const checkCursor =(event)=>{
@@ -29,16 +31,17 @@ const MoreDetailedData = ({scrolledPixels,passingImage}) => {
     const handlePlayPause = (event)=>{
       const element = event.target;
       const currentSongNo = element.parentNode.parentNode.textContent;
-
+      setPlayerData(songlist[Number(currentSongNo)-1])
+      console.log()
       setPlayThisSong(currentSongNo)
       // console.log(playCurrentSong.current.src)
       // playCurrentSong.current.play();
-      playSong();
-    }
-
-    function playSong(){
       playCurrentSong.current.play();
     }
+
+ 
+      
+    
     const showMore =() =>{
         setShowMoreSongs(true);
     }
@@ -131,7 +134,7 @@ const MoreDetailedData = ({scrolledPixels,passingImage}) => {
                       
                                       </span>  
                                       <img src={element.picture} alt=""/>
-                                      <span className="moreDetailedData-songname">{element.songName}</span>
+                                      <span className="moreDetailedData-songname" ref={getSongName}>{element.songName}</span>
                                     </div>
                                     <span className='moreDetailedData-timesListened'>{element.timesListened}</span>
                                     <div className='moreDetailedData-addfavorites'>

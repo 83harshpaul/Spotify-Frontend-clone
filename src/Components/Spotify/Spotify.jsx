@@ -10,7 +10,7 @@ import { Outlet } from 'react-router-dom'
 // import SignUp from './Components/Pages/SignUp';
 
 const Spotify = ({setLanguageOptions,showCreatePlaylist,setShowCreatePlaylist,
-                 setNavbarInputBorder,navbarInputBorder,setScrollPixels}) => {
+                 setNavbarInputBorder,navbarInputBorder,setScrollPixels,playerData}) => {
   return (
     <div>
         <MainPlusNavbar setLanguageOptions={setLanguageOptions}
@@ -18,8 +18,9 @@ const Spotify = ({setLanguageOptions,showCreatePlaylist,setShowCreatePlaylist,
                          setShowCreatePlaylist={setShowCreatePlaylist}
                          setNavbarInputBorder={setNavbarInputBorder}
                          navbarInputBorder={navbarInputBorder}
-                         setScrollPixels={setScrollPixels}/>
-        <Player />
+                         setScrollPixels={setScrollPixels}
+                         />
+        <Player playerData={playerData}/>
     </div>
   )
 }

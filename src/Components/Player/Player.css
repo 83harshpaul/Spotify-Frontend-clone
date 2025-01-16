@@ -40,3 +40,75 @@
 .player-signup-one{
     text-decoration: none;
 }
+.songplayer{
+    background-color:#6483e4;
+    margin: 0 10px 10px 10px;
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+}
+.songplayer-leftpart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.songplayer-leftpart img{
+    width: 70px;
+    border-radius: 6px;
+    
+}
+.songplayer-leftpart-artistinfo{
+    display: flex;
+    flex-direction:column;
+}
+.sonplayer-songname{
+    color: #fff;
+    font-weight: bold;
+}
+.sonplayer-songname:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sonplayer-artistname{
+    color: #ccc9c9;
+}
+.sonplayer-artistname:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+}
+.songplayer-addtoplaylist{
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 100%;
+    padding: 0px 5px 4px 5px;
+}
+.sonplayer-leftpart-plussign{
+    color: #dad3d3;
+    border: 1px solid #fff;
+    font-weight: bold;
+    border-radius: 100%;
+    padding: 4px;
+    font-size: 10px;
+}
+.sonplayer-leftpart-plussign:hover{
+    scale: 1.05;
+    transition: all 0.2 ease-in-out;
+    cursor: pointer;
+    color: #fff;
+}
+.songplayer-midpart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.songplayer-midpart-controls{
+    display: flex;
+}
+.songplayer-midpart-songlength{
+    display: flex;
+    align-items: center;
+}
