@@ -12,9 +12,10 @@ import artistData from '../Data/ArtistData'
 import Container from '../Container/Container'
 import allContent from "../Data/AllContent"
 
-const MoreDetailedData = ({scrolledPixels,passingImage,setPlayerData}) => {
+const MoreDetailedData = ({scrolledPixels,passingImage,setPlayerData,pauseSong,setAudioSource,setPause}) => {
     const [showMoreSongs, setShowMoreSongs] = React.useState(false)
-    
+   
+    // console.log(audioSource)
     
     const firstElement = moreDetailed[passingImage-1];
     
@@ -22,21 +23,46 @@ const MoreDetailedData = ({scrolledPixels,passingImage,setPlayerData}) => {
     const playCurrentSong = useRef(null)
     const getSongName = useRef(null)
     const [playThisSong,setPlayThisSong] = React.useState("1")
+    
+    React.useEffect(()=>{
+      setAudioSource(document.querySelector("audio"))
+    },[])
+  
 
-    // const checkCursor =(event)=>{
-    //   const element = event.target;
-    //   console.log(element.parentNode.parentNode.textContent)
+    function handlePlayPause(event){
+      return new Promise(resolve =>{
+        setTimeout(()=>{
+          const element = event.target;
+          const currentSongNo = element.parentNode.parentNode.textContent;
+          setPlayerData(songlist[Number(currentSongNo)-1])
+          setPlayThisSong(currentSongNo)
+  
+          resolve();
+        },500)
+      });
+    }
+    // function playingSong(){
+    //   return new Promise(resolve =>{
+    //     setTimeout(()=>{
+    //      playCurrentSong.current.play();
+    //      resolve();
+    //     },1000)
+    //  })
     // }
+    function playingSong(){
+      return new Promise(resolve =>{
+        setTimeout(()=>{
+          setPause();
+         resolve();
+        },1000)
+     })
+    }
 
-    const handlePlayPause = (event)=>{
-      const element = event.target;
-      const currentSongNo = element.parentNode.parentNode.textContent;
-      setPlayerData(songlist[Number(currentSongNo)-1])
-      console.log()
-      setPlayThisSong(currentSongNo)
-      // console.log(playCurrentSong.current.src)
-      // playCurrentSong.current.play();
-      playCurrentSong.current.play();
+    
+    const controlSongs = async (event)=>{
+       await handlePlayPause(event);
+       await playingSong();
+      
     }
 
  
@@ -127,7 +153,7 @@ const MoreDetailedData = ({scrolledPixels,passingImage,setPlayerData}) => {
                         return <div className="moreDetailedData-songs" key={element.SNo}  >
                                     <div className="moreDetailedData-songs-three">
                                       <span className="moreDetailedData-sno">
-                                         <FontAwesomeIcon icon={faPlay} className='moreDetailedData-play' onClick={handlePlayPause}/>
+                                         <FontAwesomeIcon icon={faPlay} className='moreDetailedData-play' onClick={controlSongs}/>
                                          <span className="moreDetailedData-showSno"> {element.SNo}</span>
                                          {/* <audio src={`${firstElement.songsAudios[playThisSong-1].song}`} ref={playCurrentSong}/> */}
                                          <audio src={`${songlist[playThisSong-1].song}`} ref={playCurrentSong}/>

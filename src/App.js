@@ -19,6 +19,9 @@ function App() {
   const [passingImage,setPassingImage] = React.useState("1")
   const [scrolledPixels,setScrollPixels] = React.useState("")
   const [playerData, setPlayerData] = React.useState({})
+  const [pauseSong, setPauseSong] = React.useState(false)
+  const [audioSource, setAudioSource] = React.useState(null)
+  const [previousAudioSource, setPreviousAudioSource] = React.useState(null)
   // console.log(playerData)
   const createplaylistClasses = [ "createplaylist","createplaylist-heading","createplaylist-sub","createplaylist-button"]  
   const navbarInputClasses = ["navbar-search-icon","navbar-search","navbar-input"]
@@ -55,6 +58,53 @@ function App() {
 
   const isSignUpFirstRoute = location.pathname === "/signUpFirst";
 
+
+  // const setPause =()=>{
+  //   if(audioSource){
+  //       if(pauseSong){
+  //           audioSource.pause();    
+  //       }
+  //       else{
+  //           audioSource.play();
+  //       }
+  //       setPauseSong(!pauseSong);
+  //   }    
+   
+  // }
+  const setPause = ()=>{
+    if(audioSource){
+      console.log(previousAudioSource);
+        if(previousAudioSource === null || previousAudioSource === audioSource){
+          
+          if(pauseSong){
+            audioSource.pause();
+          }
+          else{
+            audioSource.play();
+          }
+          setPauseSong(!pauseSong);
+          
+          console.log("level1");
+          // console.log(previousAudioSource);
+          console.log(audioSource);
+          setPreviousAudioSource(audioSource);
+        }
+        else{
+              // if pauseSong is true or gana chal rha hain
+              if(pauseSong){
+                audioSource.play();
+              }
+              else{
+                audioSource.play();
+                setPauseSong(!pauseSong);
+              }
+              setPreviousAudioSource(audioSource);
+              console.log("level2");
+        }
+    }
+  }
+
+
   return (
     <div className="App"  onClick={handleMouseMove}>
       <div
@@ -73,6 +123,10 @@ function App() {
                                             setNavbarInputBorder={setNavbarInputBorder}
                                             setScrollPixels={setScrollPixels}
                                             playerData={playerData} 
+                                            setPauseSong={setPauseSong}
+                                            pauseSong={pauseSong}
+                                            audioSource={audioSource}
+                                            setPause={setPause}
                                             />}>
               <Route index element={<Hero setPassingImage={setPassingImage}/>} />
               <Route path="allArtists" element={<ShowAllCategory category="artist" />} />
@@ -80,8 +134,13 @@ function App() {
               <Route path="allRadios" element={<ShowAllCategory category="radio"/>} />
               <Route path="browseall" element={<BrowseAll />}/>
               <Route path="podcast" element={<Podcast />}/> 
-              <Route path="moreDetails" element ={<MoreDetailedData scrolledPixels={scrolledPixels} passingImage={passingImage} 
-                                                                    setPlayerData={setPlayerData}/>}/>       
+              <Route path="moreDetails" element ={<MoreDetailedData scrolledPixels={scrolledPixels} 
+                                                                    passingImage={passingImage} 
+                                                                    setPlayerData={setPlayerData}
+                                                                    pauseSong={pauseSong}
+                                                                    setPauseSong={setPauseSong}
+                                                                    setAudioSource={setAudioSource}
+                                                                    setPause={setPause}/>}/>       
           </Route>
           
           <Route path="/signup" element={<SignUp/>}/>

@@ -41,16 +41,18 @@
     text-decoration: none;
 }
 .songplayer{
-    background-color:#6483e4;
+    background:transparent;
     margin: 0 10px 10px 10px;
     display: flex;
-    padding: 8px;
+    padding: 7px 5px ;
     justify-content: space-between;
+    align-items: center;
 }
 .songplayer-leftpart{
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 20%;
     
 }
 .songplayer-leftpart img{
@@ -104,11 +106,114 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
+    gap: 8px;
 }
 .songplayer-midpart-controls{
     display: flex;
+    gap:25px;
+    align-items: center;
+}
+/* .songplayer-midpart-songlength{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .songplayer-midpart-controls{
+    gap:25px;
+    align-items: center;
+} */
+.songplayer-midpart-leftbutton{
+    display: flex;
+    align-items: center;
+    /* margin-right: ; */
+}
+.songplayer-midpart-rect{
+   
+    width: 4px;
+    height: 18px;
+    background-color: #dcd8d8;
+    border-radius: 50px;
+    margin-right:1px;
+}
+.songplayer-controls-buttons{
+    color: #dcd8d8;
+    font-size: 21px;
+    transition: 0.8ms all ease-in-out;
+}
+.songplayer-controls-buttons:hover{
+    scale: 1.08;
+    cursor: pointer;
+    color: white;
+}
+.songplayer-controls-buttons.mainbutton{
+    color: #fff;
+    font-size: 42px ;
+}
+.songplayer-controls-buttons.mainbutton:hover{
+    color:#f9f3f3 ;
+}
+.songplayer-control-buttons.navigate{
+    font-size: 30px;
+    color: #dcd8d8;
+    /* font-size: 21px; */
+    transition: 0.8ms all ease-in-out;
+    /* width: 25px; */
+}
+.songplayer-midpart-leftbutton:hover{
+    scale: 1.08;
+    cursor: pointer;
+    color: white;
 }
 .songplayer-midpart-songlength{
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap:11px;
+}
+.songplayer-midpart-songcompleted,
+.songplayer-midpart-totalsonglength{
+    color: #dcd8d8;
+}
+.songplayer-midpart-part{
+ width: 85%;
+ height: 4px;
+ background-color: #9f9b9b6d;
+ border-radius: 100px;
+}
+.songplayer-midpart-partcompleted{
+    width: 30%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 100px ;
+}
+.songplayer-rightpart{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    gap: 19px;
+    margin-right: 10px;
+}
+.songplayer-rightbuttons{
+    font-size:19px;
+    color: #dcd8d8;
+    transition: all 0.5ms;
+}
+.songplayer-rightbuttons.nowplaying{
+    font-size: 8px;
+    border: 2px solid #dcd8d8;
+    padding: 4px;
+    /* color: green; */
+}
+.songplayer-rightpart-volumebar{
+    width: 30%;
+    height: 5px;
+    background-color:#c4bebe ;
+    border-radius: 100px;
+}
+.songplayer-rightbuttons:hover{
+    color: white;
+    scale: 1.05;
+    cursor: pointer;
 }
